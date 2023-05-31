@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6ff;
+}
+
+.container {
+  background-color: #fff;
+  width: 900px;
+  height: 600px;
+  border-radius: 10px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.container::after {
+  content: "";
+  display: block;
+  background-color: #6d6de6;
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  z-index: -1;
+}
+
+.cont-head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.cont-head a {
+  color: #6363ce;
+  margin-bottom: 66px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 236px;
+  height: 321px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  border: 2px solid #f0f0f6;
+}
+
+.card:not(last-child) {
+  margin-right: 30px;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.card-content {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.card-price {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 85px;
+}
+
+.card-price span {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.first {
+  margin-top: 18px;
+}
+
+button {
+  width: 176px;
+  height: 47px;
+  background-color: #6d6de6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
